@@ -12,5 +12,6 @@ Connectors of databases:
 
 Download the Dockerfile and use:
 > docker build -t apache/nifi .
+
 > docker run --name nifi -p 8080:8080 -d apache/nifi --restart=always
 
