@@ -1,7 +1,9 @@
 # Nifi-with-Connectors-Docker
 
-This Dockerfile includes Apache/Nifi:Latest and it also has commands to download connectors of the most common databases.
-BEWARE! This Dockerfile is configured for HTTP access without authentication through the port 8080.
+This Dockerfile includes Apache/Nifi:Latest and it also has commands to download connectors of the most common databases
+and to move them to the ${NIFI_HOME}/lib location. Nifi sees connectors directly.
+
+**BEWARE! This Dockerfile is configured for HTTP access without authentication through the port 8080.**
 For authentication and secure access through HTTPS, do not use directly and apply your configurations.
 
 Connectors of databases:
